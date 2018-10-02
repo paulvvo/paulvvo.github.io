@@ -4,9 +4,27 @@ html, body{
 	margin:0;
 	background-color:red;
 }
+.tech-showcase{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around
+
+}
+.tech-box{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	flex-basis: 300px;
+}
+img{
+	height: 200px;
+	width:200px;
+	border: 0.5px black solid;
+
+}
 
 
 footer{
 	background-color:steelblue;
-	height:100px
+	height:200px
 }
