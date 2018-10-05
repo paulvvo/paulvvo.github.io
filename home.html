@@ -11,10 +11,10 @@
 
 		<nav>
 			<ul>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="home.html">Home</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#home">Home</a></li>
 			</ul>
 			<header>
 				<h1><i class="fas fa-keyboard"></i></h1>
@@ -22,58 +22,77 @@
 		</nav>
 
 		<main>
-				<section class="banner-section">
+
+				<section class="banner-section" id="home">
 					<h3>Web Developer</h3>
 					<p>Hi, I'm Paul. Welcome to my site! I'm a developer with experience with both front and back end development. Check out some of my projects below!</p>
-					<a href="portfolio.html">View Portfolio</a>
+					<a href="#portfolio">View Portfolio</a>
 				</section>
 
-				<section class="about-section">
+				<section class="about-section" id="about">
 					<h2>About</h2>
 					<div class="about-container">
-						<div >
-							<img src="./images/about.jpg" alt="aboutmeimage" id="about-image">
+						<div class="about-image">
+							<img src="./images/about.jpg" alt="aboutmeimage">
 						</div>
-						<div id="about-para">
-							<p>I completed my undergraduate program at Ryerson University. I was in the computer engineering program and got my Bachelor of Engineering degree after 4 years. After the completion of my degree, I began exploring web development which I had no prior experience with. </p>
+						<div class="about-para">
+							<p>I completed my undergraduate program at Ryerson University.
+								I was in the computer engineering program and got my Bachelor of Engineering degree after 4 years.
+								After the completion of my degree, I began exploring web development which I had no prior experience with. </p>
 							<br>
-							<p>This is when I began learning HTML, CSS, Bootstrap, Javascript, and jQuery to build front end websites. Then progressing towards the back end where I developed applications with Node.js, Express and MongoDB. As I continued to develop different applications, I garnered a sense of accomplishment from my projects and realized I wanted to pursue this as a career.</p>
-
-						</div>
+							<p>This is when I began learning HTML, CSS, Bootstrap, Javascript, and jQuery to build front end websites.
+								Then progressing towards the back end where I developed applications with Node.js, Express and MongoDB.
+								As I continued to develop different applications, I garnered a sense of accomplishment from my projects
+								and realized I wanted to pursue this as a career.</p>
+						</div>		
 					</div>
 				</section>
 
-				<section class="portfolio-section">
+				<section class="portfolio-section" id="portfolio" >
 					<h2>Portfolio</h2>
-					<div class="portfolio-box-container">
-						<div class="portfolio-box">
-							<img src="./images/proj1.png" alt="project-image">
-							<p>see more</p>
-						</div>
-						<div class="portfolio-box">
-							<img src="./images/proj2.png" alt="project-image">
-							<p>see more</p>
-						</div>
-						<div class="portfolio-box">
-							<img src="./images/proj3.png" alt="project-image">
-							<p>see more</p>
-						</div>
-						<div class="portfolio-box">
-							<img src="./images/proj2.png" alt="project-image">
-							<p>see more</p>
-						</div>
-						<div class="portfolio-box">
-							<img src="./images/proj3.png" alt="project-image">
-							<p>see more</p>
-						</div>
-						<div class="portfolio-box">
-							<img src="./images/proj1.png" alt="project-image">
-							<p>see more</p>
+					<div class="portfolio-box-top-container">
+						<div class="portfolio-box-container">
+							<div class="portfolio-box">
+								<img src="./images/proj1.png" alt="project-image">
+								<p>see more</p>
+							</div>
+							<div class="portfolio-box">
+								<img src="./images/proj2.png" alt="project-image">
+								<p>see more</p>
+							</div>
+							<div class="portfolio-box">
+								<img src="./images/proj3.png" alt="project-image">
+								<p>see more</p>
+							</div>
+							<div class="portfolio-box">
+								<img src="./images/proj2.png" alt="project-image">
+								<p>see more</p>
+							</div>
+							<div class="portfolio-box">
+								<img src="./images/proj3.png" alt="project-image">
+								<p>see more</p>
+							</div>
+							<div class="portfolio-box">
+								<img src="./images/proj1.png" alt="project-image">
+								<p>see more</p>
+							</div>
 						</div>
 					</div>
 
 				</section>
 
+				<section class="contact-section" id="contact">
+					<h2>Contact</h2>
+					<h4>Get in Touch!</h2>
+					<p>For questions or project collaborations, please send me an email and we can talk.</p>
+					<div class="contact-icons">
+						<i class="fab fa-facebook-square footer-icons"></i>
+						<i class="fab fa-twitter-square footer-icons"></i>
+						<i class="fab fa-github-square footer-icons"></i>
+						<i class="fab fa-linkedin footer-icons"></i>
+					</div>
+					<p>paulvo@live.ca</p>
+				</section>
 
 		</main>
 

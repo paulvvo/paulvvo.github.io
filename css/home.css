@@ -3,7 +3,6 @@ html, body{
 	padding:0;
 	margin:0;
   font-family: 'Orbitron', sans-serif;
-
 }
 /* ***************** NAVBAR SECTION ******************** */
 nav{
@@ -77,27 +76,37 @@ nav ul li a:hover{
 }
 /* ***************** ABOUT SECTION ******************** */
 .about-section{
-	margin: 0 100px 100px 100px;
+	margin: 0 0 100px 0;
+	padding: 70px 0 0 0;
 }
 .about-section h2{
 	text-align:center;
 }
 .about-container{
 	display:flex;
-	justify-content:center;
+	justify-content: center;
+	flex-wrap:wrap;
 }
-#about-image{
-	width: 450px;
-	margin-right: 5px;
+.about-image{
+	flex-basis:600px;
 }
-#about-para p{
-	margin:0;
-	margin-left: 5px;
-	letter-spacing: 1px;
+.about-image img{
+	width:600px;
+	margin-right:5px;
+}
+.about-para{
+	flex-basis:600px;
+}
+.about-para p{
+	margin: 0 0 0 5px;
+	letter-spacing: 2px;
+	font-weight:500;
+	/* margin-left:5px; */
 }
 /* ***************** PORTFOLIO SECTION ******************** */
 .portfolio-section{
-	margin: 0 100px 100px 100px;
+	margin: 0 0 200px 0;
+	padding: 70px 0 0 0;
 }
 .portfolio-section h2{
 	text-align:center;
@@ -106,12 +115,18 @@ nav ul li a:hover{
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:center;
+
+
 }
 .portfolio-box{
 	position:relative;
 	padding:0;
 	margin:0;
-	width:382px;
+	flex-basis:400px;
+	/* width:382px; */
+	/* flex-basis:33%; */
+
+
 }
 .portfolio-box p{
 	display:none;
@@ -135,6 +150,24 @@ nav ul li a:hover{
 	filter: blur(5px);
 	transition: 0.4s ease-in-out;
 }
+
+/* ***************** Contact SECTION ******************** */
+.contact-section{
+	background-image: url("../images/arrow.jpg");
+	background-size:center;
+	background-position:right;
+	padding-top:200px;
+	padding-bottom: 200px;
+	text-align:center;
+	/* display:flex;
+	flex-direction:column;
+	align-items:flex-end; */
+}
+.contact-section p{
+	margin:0;
+
+}
+
 footer{
 	background-color:black;
 	color:white;
