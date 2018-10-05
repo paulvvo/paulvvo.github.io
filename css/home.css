@@ -35,8 +35,9 @@ nav ul li a{
 	padding:5px 10px;
 }
 nav ul li a:hover{
-	color:#80CDFC;
-	background-color:rgba(0,0,0,0.6);
+	/* color:#80CDFC; */
+	color:black;
+	background-color:rgba(255,255,255,0.6);
 	border-radius: 10px;
 }
 /* ***************** BANNER SECTION ******************** */
@@ -134,10 +135,12 @@ nav ul li a:hover{
 	top:50%;
 	left:50%;
 	transform: translateX(-50%);
-	color:red;
+	color:black;
+	font-weight: 700;
 }
 .portfolio-box:hover p{
 	display:block;
+	z-index:2;
 }
 .portfolio-box img{
 	width:100%;
@@ -147,6 +150,9 @@ nav ul li a:hover{
 }
 .portfolio-box:hover img{
 	filter: blur(5px);
+	transform: scale(1.1);
+	position:relative;
+	z-index:1;
 	transition: 0.4s ease-in-out;
 }
 
@@ -162,14 +168,39 @@ nav ul li a:hover{
 	display:none;
 }
 .modalContent{
-	width:30%;
-	height: 70%;
+	width:60%;
+	height: 80%;
+	padding: 0 100px;
+	font-weight:500;
 	background-color:rgba(255,255,255,0.7);
-	margin: 100px auto;
+	margin: 50px auto;
 	text-align:center;
 	display:none;
 }
 
+.modalTechImagesContainer{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+}
+.modalContent .modalTechImages{
+	/* border:1px solid black; */
+	width:100px;
+	height:100px;
+	border: 1px solid transparent;
+}
+.modalContent .modalTechImages:hover{
+	transform: scale(1.5);
+	transition: 0.2s ease-in-out;
+	margin: 0 25px;
+}
+.modalContent a{
+	text-decoration:none;
+	border-radius:12px;
+	padding: 10px;
+	background-color:rgba(0,0,0,0.7);
+	color:white;
+}
 
 /* ***************** Contact SECTION ******************** */
 .contact-section{
