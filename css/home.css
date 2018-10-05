@@ -124,9 +124,7 @@ nav ul li a:hover{
 	padding:0;
 	margin:0;
 	flex-basis:400px;
-	/* width:382px; */
-	/* flex-basis:12%; */
-
+	cursor: pointer;
 
 }
 .portfolio-box p{
@@ -152,6 +150,27 @@ nav ul li a:hover{
 	transition: 0.4s ease-in-out;
 }
 
+.modalContainer{
+	border:1px solid black;
+	position:fixed;
+	top:0;
+	left:0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	background-color:rgba(0,0,0,0.7);
+	display:none;
+}
+.modalContent{
+	width:30%;
+	height: 70%;
+	background-color:rgba(255,255,255,0.7);
+	margin: 100px auto;
+	text-align:center;
+	display:none;
+}
+
+
 /* ***************** Contact SECTION ******************** */
 .contact-section{
 	background-image: url("../images/arrow.jpg");
@@ -173,7 +192,6 @@ nav ul li a:hover{
 	color:rgba(0,0,0,0.7);
 }
 .contact-section div .contact-icons:hover{
-
 	color:black;
 }
 .contact-section p{
