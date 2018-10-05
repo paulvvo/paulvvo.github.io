@@ -81,6 +81,7 @@ nav ul li a:hover{
 }
 .about-section h2{
 	text-align:center;
+	font-weight:700;
 }
 .about-container{
 	display:flex;
@@ -88,14 +89,14 @@ nav ul li a:hover{
 	flex-wrap:wrap;
 }
 .about-image{
-	flex-basis:600px;
+	flex-basis:595px;
 }
 .about-image img{
 	width:600px;
 	margin-right:5px;
 }
 .about-para{
-	flex-basis:600px;
+	flex-basis:595px;
 }
 .about-para p{
 	margin: 0 0 0 5px;
@@ -110,12 +111,12 @@ nav ul li a:hover{
 }
 .portfolio-section h2{
 	text-align:center;
+	font-weight:700px;
 }
 .portfolio-box-container{
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:center;
-
 
 }
 .portfolio-box{
@@ -124,7 +125,7 @@ nav ul li a:hover{
 	margin:0;
 	flex-basis:400px;
 	/* width:382px; */
-	/* flex-basis:33%; */
+	/* flex-basis:12%; */
 
 
 }
@@ -156,26 +157,38 @@ nav ul li a:hover{
 	background-image: url("../images/arrow.jpg");
 	background-size:center;
 	background-position:right;
-	padding-top:200px;
+	padding-top:150px;
 	padding-bottom: 200px;
 	text-align:center;
 	/* display:flex;
 	flex-direction:column;
 	align-items:flex-end; */
 }
+.contact-section h4{
+	margin:80px 0 0 0;
+}
+.contact-section div .contact-icons{
+	font-size: 60px;
+	margin:10px 10px 50px 10px;
+	color:rgba(0,0,0,0.7);
+}
+.contact-section div .contact-icons:hover{
+
+	color:black;
+}
 .contact-section p{
 	margin:0;
-
+	font-weight:700;
 }
 
 footer{
 	background-color:black;
 	color:white;
 	text-align:center;
-	padding:50px;
-	height:200px
+	padding-top:100px;
+	padding-bottom:100px;
 }
 .footer-icons{
 	margin: 10px;
-	font-size:2em;
+	color:white;
 }
