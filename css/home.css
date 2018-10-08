@@ -38,8 +38,9 @@ nav ul li a:hover{
 	/* color:#80CDFC; */
 	color:black;
 	background-color:rgba(255,255,255,0.6);
-	border-radius: 10px;
+	border-radius: 4px;
 }
+
 /* ***************** BANNER SECTION ******************** */
 .banner-section{
 	clear:both;
@@ -65,7 +66,7 @@ nav ul li a:hover{
 .banner-section a{
 	text-decoration: none;
 	background-color:rgba(0,0,0,0.4);
-	border-radius:12px;
+	border-radius:4px;
 	padding: 10px;
 	color:white;
 	user-select:none;
