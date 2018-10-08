@@ -30,29 +30,13 @@ window.addEventListener("click", function(e){
 	}
 });
 
-// $("document").ready(function(){
-// 	var scroll = $(".scroll");
-//
-// 	scroll.click(function(event){
-// 		event.preventDefault();
-// 		$("body,html").animate({
-// 			scrollTop:$(this.hash).offset().top
-// 		}, 1000)
-// 	})
-// })
+$("document").ready(function(){
+	var scroll = $(".scroll");
 
-
-function smoothScroll(element, duration){
-	var targetElement = document.querySelector(element);
-	var targetElementPosition = targetElement.getBoundingClientRect().top;
-	var windowPosition = window.pageYOffset;
-
-
-
-	console.log(targetElement);
-	console.log(targetElementPosition);
-	console.log(windowPosition);
-}
-
-
-smoothScroll(".banner-section", 1000);
+	scroll.click(function(event){
+		event.preventDefault();
+		$("body,html").animate({
+			scrollTop:$(this.hash).offset().top
+		}, 1000)
+	})
+})
