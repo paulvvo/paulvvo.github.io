@@ -40,3 +40,19 @@ window.addEventListener("click", function(e){
 // 		}, 1000)
 // 	})
 // })
+
+
+function smoothScroll(element, duration){
+	var targetElement = document.querySelector(element);
+	var targetElementPosition = targetElement.getBoundingClientRect().top;
+	var windowPosition = window.pageYOffset;
+
+
+
+	console.log(targetElement);
+	console.log(targetElementPosition);
+	console.log(windowPosition);
+}
+
+
+smoothScroll(".banner-section", 1000);
