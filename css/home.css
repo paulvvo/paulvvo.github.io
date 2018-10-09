@@ -240,7 +240,7 @@ nav ul li a:hover, nav ul li a:focus{
 
 /* ***************** Contact SECTION ******************** */
 .contact-section{
-	padding: 70px 0 0 0;
+	padding: 70px 0 100px 0;
 	background-image: url("../images/arrow.jpg");
 	background-size:center;
 	background-position:right;
