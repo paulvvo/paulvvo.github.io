@@ -1,0 +1,278 @@
+*{
+	box-sizing: border-box;
+}
+html, body{
+	height:100%;
+	padding:0;
+	margin:0;
+  font-family: 'Orbitron', sans-serif;
+	overflow-x:hidden;
+}
+
+/* ***************** NAVBAR SECTION ******************** */
+
+nav{
+	background-color:rgba(0,0,0,0.5);
+	width:100%;
+	text-align:right;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:2;
+}
+nav span i{
+	float:left;
+	font-size:2em;
+	margin:0.42em;
+	background: linear-gradient(to right, #00c3e3 , #ff4554);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav ul {
+	margin:0;
+}
+nav ul li{
+	display:inline-block;
+	list-style: none;
+	margin: 1em 0.5em;
+}
+nav ul li a{
+	text-decoration:none;
+	color:white;
+	padding:5px 10px;
+}
+nav ul li a:hover, nav ul li a:focus{
+	color:black;
+	background-color:rgba(255,255,255,0.6);
+	border-radius: 4px;
+}
+/* ***************** BANNER SECTION ******************** */
+.banner-section{
+	background:url("../images/banner.jpg");
+	background-position:center;
+	background-size:cover;
+	height:100vh;
+	width:100wh;
+	text-align:center;
+	padding-top:10em;
+	margin-bottom: 10em;
+}
+.banner-section h3{
+	margin:0;
+	font-weight:700;
+	font-size:2em;
+}
+.banner-section p{
+	font-size:1em;
+	padding: 0 1em;
+	line-height: 2em;
+	margin-bottom: 2em;
+	font-weight:700;
+}
+.banner-section a{
+	text-decoration: none;
+	background-color:rgba(0,0,0,0.4);
+	border-radius:4px;
+	padding: 10px;
+	color:white;
+	user-select:none;
+}
+.banner-section a:hover{
+	color:black;
+	background-color:rgba(255,255,255,0.4);
+}
+
+/* ***************** ABOUT SECTION ******************** */
+.about-section{
+	margin-bottom: 10em;
+	padding: 70px 0 0 0;
+}
+.about-section h2{
+	text-align:center;
+	font-weight:700;
+}
+.about-container{
+	display:flex;
+	justify-content: center;
+	flex-wrap:wrap;
+}
+.about-image img{
+	width:17em;
+	height:auto;
+}
+.about-para{
+	width:17em;
+	text-align:center;
+}
+.about-para p{
+	letter-spacing:0.06em;
+	margin:0;
+	font-size:0.8em;
+	font-weight:500;
+	user-select:none;
+	transition: 0.4s ease-in-out;
+}
+.about-para p:hover{
+	transform:scale(1.04);
+	transition: 0.4s ease-in-out;
+}
+
+
+/* ***************** PORTFOLIO SECTION ******************** */
+.portfolio-section{
+	margin-bottom: 10em;
+	padding: 70px 0 0 0;
+}
+.portfolio-section h2{
+	text-align:center;
+	font-weight:700px;
+}
+.portfolio-box-container{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+.portfolio-box{
+	position:relative;
+	padding:0;
+	margin:0;
+	flex-basis:300px;
+	cursor: pointer;
+}
+.portfolio-box p{
+	display:none;
+	position:absolute;
+	margin:0;
+	top:50%;
+	left:50%;
+	transform: translateX(-50%);
+	color:black;
+	font-weight: 700;
+	text-align:center;
+}
+.portfolio-box:hover p{
+	display:block;
+	/* z-index:1; */
+}
+.portfolio-box img{
+	width:100%;
+	height:100%;
+	background-position:center;
+	background-size:cover;
+	transition: 0.4s ease-in-out;
+}
+.portfolio-box:hover img{
+	position:relative;
+	z-index:1;
+	filter: blur(5px);
+	transform: scale(1.1);
+	transition: 0.4s ease-in-out;
+}
+/* ***************** MODAL SECTION ******************** */
+.modalContainer{
+	border:1px solid black;
+	position:fixed;
+	top:0;
+	left:0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	background-color:rgba(0,0,0,0.7);
+	display:none;
+	animation-name: openModal;
+	animation-duration: 0.7s;
+	animation-timing-function:ease-in-out;
+}
+@keyframes openModal{
+	from{opacity:0;}
+	to{opacity:1;}
+}
+#closeModalButton{
+	margin-left:83%;
+	margin-top: 1.5em;
+	cursor:pointer;
+	user-select:none;
+	position:absolute;
+}
+#closeModalButton:hover{
+	color:red;
+}
+
+.modalContent{
+	width: 70%;
+	height: 90%;
+	padding: 40px;
+	font-weight:500;
+	background-color:rgba(255,255,255,0.7);
+	margin: 1.5em auto;
+	text-align:center;
+	display:none;
+}
+.modalContent h1{
+	margin:0;
+}
+
+.modalTechImagesContainer{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	transition: 0.3s ease-in-out;
+	margin-bottom: 30px;
+}
+.modalContent .modalTechImages{
+	width:100px;
+	height:100px;
+	border: 1px solid transparent;
+	transition: 0.3s ease-in-out;
+}
+.modalContent .modalTechImages:hover{
+	transform: scale(1.5);
+	transition: 0.3s ease-in-out;
+	margin: 0 25px;
+}
+.modalContent a{
+	text-decoration:none;
+	border-radius:12px;
+	padding: 10px;
+	background-color:rgba(0,0,0,0.7);
+	color:white;
+}
+
+/* ***************** Contact SECTION ******************** */
+.contact-section{
+	padding: 70px 0 0 0;
+	background-image: url("../images/arrow.jpg");
+	background-size:center;
+	background-position:right;
+	text-align:center;
+}
+.contact-section h4{
+	margin-top:4em;
+}
+.contact-section div .contact-icons{
+	font-size: 60px;
+	margin:10px 10px 50px 10px;
+	color:rgba(0,0,0,0.7);
+}
+.contact-section div .contact-icons:hover{
+	color:black;
+	transform: scale(1.1);
+	transition: 0.2s ease-in-out;
+}
+.contact-section p{
+	margin:0 1em;
+	font-size:0.69em;
+	font-weight:700;
+}
+
+footer{
+	background-color:black;
+	color:white;
+	text-align:center;
+	padding-top:100px;
+	padding-bottom:100px;
+}
+.footer-icons{
+	margin: 10px;
+	color:white;
+}
