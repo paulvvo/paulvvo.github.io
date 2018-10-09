@@ -6,7 +6,7 @@ html, body{
 	padding:0;
 	margin:0;
   font-family: 'Orbitron', sans-serif;
-	overflow-x:hidden;
+
 }
 
 /* ***************** NAVBAR SECTION ******************** */
@@ -28,6 +28,12 @@ nav span i{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+nav .menu{
+	font-size:1.8em;
+	margin:0.42em;
+	display:none;
+	color:white;
+}
 nav ul {
 	margin:0;
 }
@@ -45,6 +51,31 @@ nav ul li a:hover, nav ul li a:focus{
 	color:black;
 	background-color:rgba(255,255,255,0.6);
 	border-radius: 4px;
+}
+.showNav{
+	display:block;
+	display:flex;
+	flex-direction:column;
+}
+
+@media screen and (max-width :480px){
+	nav{
+		background-color:rgba(0,0,0,1);
+	}
+	nav .menu{
+		display:inline-block;
+	}
+	nav ul{
+		display:none;
+	}
+	nav ul li{
+		border-bottom:0.5px solid white;
+	}
+	nav ul li a{
+		text-decoration:none;
+		color:white;
+		padding:0px 10px;
+	}
 }
 /* ***************** BANNER SECTION ******************** */
 .banner-section{

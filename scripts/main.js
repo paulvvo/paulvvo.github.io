@@ -3,6 +3,15 @@ var modalContent = document.getElementsByClassName("modalContent");
 var portfolioBox = document.getElementsByClassName("portfolio-box");
 var closeModalButton = document.querySelector("#closeModalButton");
 
+var ul = document.getElementsByTagName("ul")[0];
+var menu = document.getElementsByClassName("menu")[0];
+var li = document.getElementsByTagName("li");
+
+
+menu.addEventListener("click", function(e){
+	e.preventDefault();
+	ul.classList.toggle("showNav");
+})
 
 for(let i=0; i<modalContent.length; i++){
 	portfolioBox[i].addEventListener("click", function(){
