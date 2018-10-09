@@ -1,3 +1,13 @@
+/* New Shit To Learn
+vh viewport height
+vw viewport width
+left:0 right:0 effect of width:100%?
+display:inline-block for nav
+outline: 1px solid black;
+outline-offset:
+ouline just like borders but you can offset
+*/
+
 html, body{
 	height:100%;
 	padding:0;
@@ -53,6 +63,7 @@ nav ul li a:hover{
 	top:-100px;
 	padding: 300px 100px;
 	text-align:center;
+
 
 }
 .banner-section h3{
