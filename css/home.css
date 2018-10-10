@@ -84,11 +84,12 @@ nav ul li a:hover, nav ul li a:focus{
 	background-position:center;
 	background-size:cover;
 	height:100vh;
-	width:100vw;
+	/* width:100vw; */
 	min-height:514px;
 	text-align:center;
 	padding-top:9em;
 	color:white;
+
 	/* margin-bottom: 10em; */
 }
 .banner-section h3{
@@ -389,7 +390,7 @@ nav ul li a:hover, nav ul li a:focus{
 /* ***************** Contact SECTION ******************** */
 .contact-section{
 	padding: 70px 0 100px 0;
-	background-image: url("../images/arrow.jpg");
+	background-image: url("../images/arrow3.jpg");
 	background-size:center;
 	background-position:right;
 	text-align:center;
@@ -441,9 +442,12 @@ nav ul li a:hover, nav ul li a:focus{
 @media screen and (min-width: 1500px){
 	.contact-section{
 		padding: 70px 0 200px 0;
-		background-image: url("../images/arrow.jpg");
 		background-size:cover;
-		background-position: 50% 50%;
+		background-position: center;
+	}
+	.contact-section h4{
+		margin-top:2.2em;
+		font-size:2.5em;
 	}
 }
 
@@ -454,6 +458,7 @@ footer{
 	text-align:center;
 	padding-top:100px;
 	padding-bottom:100px;
+
 }
 .footer-icons{
 	margin: 10px;
