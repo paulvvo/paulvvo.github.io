@@ -39,14 +39,14 @@ window.addEventListener("click", function(e){
 	}
 });
 
-// $("document").ready(function(){
-// 	var scrollClass = $(".scroll");
-//
-// 	scrollClass.click(function(event){
-// 		event.preventDefault();
-// 		$("body,html").animate({
-// 			scrollTop:$(this.hash).offset().top
-// 		}, 1000)
-// 	});
-//
-// });
+$("document").ready(function(){
+	var scrollClass = $(".scroll");
+
+	scrollClass.click(function(event){
+		event.preventDefault();
+		$("body,html").animate({
+			scrollTop:$(this.hash).offset().top
+		}, 1000)
+	});
+
+});

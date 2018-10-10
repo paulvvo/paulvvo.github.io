@@ -84,20 +84,24 @@ nav ul li a:hover, nav ul li a:focus{
 	background-position:center;
 	background-size:cover;
 	height:100vh;
-	width:100wh;
+	width:100vw;
+	min-height:514px;
 	text-align:center;
 	padding-top:9em;
+	color:white;
 	/* margin-bottom: 10em; */
 }
 .banner-section h3{
 	margin:0;
 	font-weight:700;
 	font-size:2.2em;
+
 }
 .banner-section p{
-	font-size:1.16em;
+	font-size:1.1em;
 	padding: 0 1em;
 	line-height: 2em;
+	margin-top:3em;
 	margin-bottom: 2em;
 	font-weight:700;
 }
@@ -119,7 +123,6 @@ nav ul li a:hover, nav ul li a:focus{
 	}
 	.banner-section h3{
 		font-size:4em;
-
 	}
 }
 
@@ -437,7 +440,7 @@ nav ul li a:hover, nav ul li a:focus{
 
 @media screen and (min-width: 1500px){
 	.contact-section{
-		padding: 70px 0 100px 0;
+		padding: 70px 0 200px 0;
 		background-image: url("../images/arrow.jpg");
 		background-size:cover;
 		background-position: 50% 50%;
